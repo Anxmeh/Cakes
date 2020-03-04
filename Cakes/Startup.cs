@@ -71,7 +71,7 @@ namespace Cakes
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-            // DbInitializer.SeedData(app.ApplicationServices, env, this.Configuration);
+           
         }
     }
 }
