@@ -1,8 +1,17 @@
-﻿<div class="col-sm-4">
+﻿@*<div class="col-sm-4">
     <img class="thumbnail" src="@Model.Image" />
     <p>Name: @Model.Name</p>
     <p>Weight, kg: @Model.Weight</p>
     <p>Price: @Model.Price.ToString("C")</p>
     <p><a class="btn btn-warning" href="#">Info</a></p>
+</div>*@
+
+<div class="card col-lg-3 m-4">
+    <img src="@Model.Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text"> @Model.Price.ToString("C")</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
 </div>
 
