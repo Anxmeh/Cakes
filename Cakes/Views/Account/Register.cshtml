@@ -1,0 +1,82 @@
+﻿@model Cakes.ViewModels.RegisterViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> SignUp Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+    <!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />-->
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+
+    <link href="~/css/registerstyle.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- main -->
+    <div class="main-w3layouts wrapper">
+        <h1> SignUp Form</h1>
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form method="post" asp-controller="Account" asp-action="Register">
+                    <div asp-validation-summary="ModelOnly"></div>
+                 
+                    <div>
+                        <input class="text" type="text" name="FirstName" placeholder="FirstName" required="" asp-for="FirstName">
+                        <span asp-validation-for="FirstName"></span>
+                    </div>
+
+                    <div>
+                        <input class="text" type="text" name="MiddleName" placeholder="MiddleName" required="" asp-for="MiddleName">
+                        <span asp-validation-for="MiddleName"></span>
+                    </div>
+                    <div>
+                        <input class="text" type="text" name="LastName" placeholder="LastName" required="" asp-for="LastName">
+                        <span asp-validation-for="LastName"></span>
+                    </div>
+                    <div>
+                        <input class="text email" type="email" name="email" placeholder="Email" required="" asp-for="Email">
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <div>
+                        <input class="text" type="password" name="Password" placeholder="Password" required="" asp-for="Password" />
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                    <div>
+                        <input class="text" type="password" name="PasswordConfirm" placeholder="Confirm Password" required="" asp-for="PasswordConfirm" />
+                        <span asp-validation-for="PasswordConfirm"></span>
+                    </div>
+                                     <input type="submit" value="SIGNUP">
+                </form>
+                <p>Have an Account? <a asp-controller="Account" asp-action="Login"> Login Now!</a></p>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="colorlibcopy-agile">
+            <p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+        </div>
+        <!-- //copyright -->
+        <ul class="colorlib-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- //main -->
+</body>
+</html>
+
